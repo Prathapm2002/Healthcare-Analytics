@@ -2,7 +2,7 @@
 
 This repository contains a Power BI dashboard designed to analyze and visualize healthcare data, providing actionable insights into patient demographics, length of stay, operational efficiency, and financial performance across healthcare facilities.
 
-![Dashboard Overview](placeholder_image.png)
+![Dashboard Overview]
 
 ## Overview
 
@@ -19,7 +19,7 @@ The **Healthcare Analytics Dashboard** enables healthcare administrators and ana
 
 ### 1. Patient Demographics and Admissions
 
-![Patient Demographics](placeholder_patient_demographics.png)
+![Patient Demographics]
 
 This page provides insights into the demographic distribution of patients, including age groups, gender, race, and ethnicity. Key visuals include:
 
@@ -29,7 +29,7 @@ This page provides insights into the demographic distribution of patients, inclu
 
 ### 2. Length of Stay Analysis
 
-![Length of Stay](placeholder_length_of_stay.png)
+![Length of Stay]
 
 This section allows users to analyze the average **Length of Stay (LOS)** for patients, helping identify trends and compare hospital LOS to state averages. Key metrics include:
 
@@ -47,7 +47,7 @@ This section allows users to analyze the average **Length of Stay (LOS)** for pa
 
 ### 3. Financial Overview
 
-![Financial Overview](placeholder_financial_overview.png)
+![Financial Overview]
 
 This page provides financial insights, including **total charges** and **total costs**. Key visuals include:
 
@@ -57,7 +57,7 @@ This page provides financial insights, including **total charges** and **total c
 
 ### 4. Quality and Compliance Metrics
 
-![Quality and Compliance](placeholder_quality_compliance.png)
+![Quality and Compliance]
 
 The quality and compliance section offers insights into the hospital's performance in maintaining healthcare standards:
 
