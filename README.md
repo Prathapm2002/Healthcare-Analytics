@@ -2,8 +2,6 @@
 
 This repository contains a Power BI dashboard designed to analyze and visualize healthcare data, providing actionable insights into patient demographics, length of stay, operational efficiency, and financial performance across healthcare facilities.
 
-![Dashboard Overview]
-
 ## Overview
 
 The **Healthcare Analytics Dashboard** enables healthcare administrators and analysts to monitor and evaluate performance metrics for hospital discharges, length of stay, patient demographics, and financial information. This dashboard is tailored to support data-driven decisions aimed at optimizing patient care, reducing costs, and enhancing operational efficiency.
@@ -19,8 +17,6 @@ The **Healthcare Analytics Dashboard** enables healthcare administrators and ana
 
 ### 1. Patient Demographics and Admissions
 
-![Patient Demographics]
-
 This page provides insights into the demographic distribution of patients, including age groups, gender, race, and ethnicity. Key visuals include:
 
 - **Age Group Distribution**: Bar chart showcasing the age range of patients discharged.
@@ -28,9 +24,6 @@ This page provides insights into the demographic distribution of patients, inclu
 - **Admission Type**: Pie chart to show admission sources, such as emergency or elective.
 
 ### 2. Length of Stay Analysis
-
-![Length of Stay]
-
 This section allows users to analyze the average **Length of Stay (LOS)** for patients, helping identify trends and compare hospital LOS to state averages. Key metrics include:
 
 - **Facility Average LOS vs. State Average**: A measure comparing Kings County Hospital Center’s LOS with the state average, calculated with a DAX formula:
@@ -47,8 +40,6 @@ This section allows users to analyze the average **Length of Stay (LOS)** for pa
 
 ### 3. Financial Overview
 
-![Financial Overview]
-
 This page provides financial insights, including **total charges** and **total costs**. Key visuals include:
 
 - **Total Charges vs. Total Costs**: A stacked bar chart comparing expenses and charges across facilities.
@@ -56,8 +47,6 @@ This page provides financial insights, including **total charges** and **total c
 - **Profitability Metrics**: Calculation of net income, total charges, and total costs to assess financial health.
 
 ### 4. Quality and Compliance Metrics
-
-![Quality and Compliance]
 
 The quality and compliance section offers insights into the hospital's performance in maintaining healthcare standards:
 
