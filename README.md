@@ -1,46 +1,95 @@
 # Healthcare Analytics Dashboard
 
-This repository contains a Power BI dashboard built to analyze healthcare data, offering interactive insights into patient management, operational efficiency, and financial performance.
+This repository contains a Power BI dashboard designed to analyze and visualize healthcare data, providing actionable insights into patient demographics, length of stay, operational efficiency, and financial performance across healthcare facilities.
 
-## Dashboard Overview
+![Dashboard Overview](placeholder_image.png)
 
-The **Healthcare Analytics Dashboard** visualizes critical metrics for healthcare providers, supporting data-driven decision-making and improved patient care outcomes.
+## Overview
 
-### Key Features
+The **Healthcare Analytics Dashboard** enables healthcare administrators and analysts to monitor and evaluate performance metrics for hospital discharges, length of stay, patient demographics, and financial information. This dashboard is tailored to support data-driven decisions aimed at optimizing patient care, reducing costs, and enhancing operational efficiency.
 
-- **Patient Metrics**: Insights into patient demographics, admission/discharge rates, and outcome statistics.
-- **Operational KPIs**: Metrics on hospital occupancy, resource utilization, and staff productivity.
-- **Financial Insights**: Revenue, costs, and budget analyses for efficient financial oversight.
-- **Quality & Compliance**: Monitoring for adherence to healthcare quality standards.
+### Key Files
 
-## Dashboard Pages
+1. **Healthcare Analytics.pbix** - Power BI dashboard file containing all report pages and visuals.
+2. **hospital_inpatient_discharges_totalhipreplacement.csv** - Dataset on hospital inpatient discharges, specifically focusing on total hip replacement procedures.
+3. **Metadata - Case Study: Analyzing Healthcare Data in Power BI.pdf** - Metadata document providing details about the dataset's columns and data types.
 
-### 1. **Patient Analytics**
-   - **Demographics**: Breakdown by age, gender, and location.
-   - **Admissions & Discharges**: Trends in admission and discharge rates.
-   - **Patient Outcomes**: Visuals on recovery, readmission, and follow-up metrics.
+   
+## Dashboard Pages and Visuals
 
-### 2. **Operational Performance**
-   - **Occupancy Rates**: Trends in bed occupancy and department-level metrics.
-   - **Staff Utilization**: Efficiency indicators for staff across departments.
-   - **Wait Times & Throughput**: Metrics for patient flow and resource allocation.
+### 1. Patient Demographics and Admissions
 
-### 3. **Financial Overview**
-   - **Revenue Streams**: Insights into revenue sources and payment types.
-   - **Expenses**: Analysis of major expenses and budget adherence.
-   - **Profitability**: Key performance indicators for financial health.
+![Patient Demographics](placeholder_patient_demographics.png)
 
-### 4. **Compliance & Quality Assurance**
-   - **Compliance Metrics**: Adherence to healthcare regulations and standards.
-   - **Quality Scores**: Data on patient satisfaction and treatment quality.
-   - **Benchmarking**: Comparisons with industry standards or historical data.
+This page provides insights into the demographic distribution of patients, including age groups, gender, race, and ethnicity. Key visuals include:
 
-## Technical Details
+- **Age Group Distribution**: Bar chart showcasing the age range of patients discharged.
+- **Gender and Ethnicity Breakdown**: Pie charts showing gender distribution and ethnicity.
+- **Admission Type**: Pie chart to show admission sources, such as emergency or elective.
 
-- **Data Model**: Integrates sources including patient records, operational data, and financial data.
-- **Custom Theme**: Ensures a professional and consistent look across visuals.
-- **Interactive Visualizations**: Filters, drill-throughs, and export options for custom data views.
+### 2. Length of Stay Analysis
+
+![Length of Stay](placeholder_length_of_stay.png)
+
+This section allows users to analyze the average **Length of Stay (LOS)** for patients, helping identify trends and compare hospital LOS to state averages. Key metrics include:
+
+- **Facility Average LOS vs. State Average**: A measure comparing Kings County Hospital Center’s LOS with the state average, calculated with a DAX formula:
+  ```DAX
+  Variance % = 
+  DIVIDE(
+      ([Average LOS for Kings County Hospital Center] - [State Average LOS]), 
+      [State Average LOS], 
+      0
+  ) * 100
+  ```
+- **Patient LOS Distribution**: Histogram of patient stay lengths.
+- **Trend Analysis**: Line graph displaying LOS trends over time by admission type.
+
+### 3. Financial Overview
+
+![Financial Overview](placeholder_financial_overview.png)
+
+This page provides financial insights, including **total charges** and **total costs**. Key visuals include:
+
+- **Total Charges vs. Total Costs**: A stacked bar chart comparing expenses and charges across facilities.
+- **Revenue Streams and Expense Categories**: Breakdown of revenue by category and analysis of key expense areas.
+- **Profitability Metrics**: Calculation of net income, total charges, and total costs to assess financial health.
+
+### 4. Quality and Compliance Metrics
+
+![Quality and Compliance](placeholder_quality_compliance.png)
+
+The quality and compliance section offers insights into the hospital's performance in maintaining healthcare standards:
+
+- **Compliance with Standards**: A compliance gauge chart showing adherence to healthcare standards.
+- **Patient Satisfaction Scores**: Bar charts representing satisfaction and discharge status.
+- **Mortality Risk and Severity Levels**: Visuals segmented by **Severity of Illness (SOI)** and **Risk of Mortality (ROM)** to show patient outcomes.
 
 ---
 
-If you would like, I can keep working to identify specific details from the file to further tailor this README. Let me know how you’d like to proceed!
+## Technical Details
+
+- **Data Model**: Integrates fields including `facility_name`, `length_of_stay`, `total_charges`, `total_costs`, `patient_disposition`, and more, facilitating comprehensive analysis of patient and hospital data.
+- **Interactive Filters**: Users can filter by age group, admission type, hospital name, and county to customize their view.
+- **Custom Visuals**: Utilizes Power BI’s custom visuals for presenting complex healthcare metrics in an accessible format.
+
+## Getting Started
+
+### Prerequisites
+
+- **Power BI Desktop**: Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) to open and modify the dashboard.
+- **Data Import**: Ensure you have the `hospital_inpatient_discharges_totalhipreplacement.csv` file to load data into the dashboard.
+
+### Installation
+
+1. Clone this repository
+2. Open the `.pbix` file in Power BI Desktop.
+3. Refresh the dataset connections to ensure the latest data is displayed.
+
+### Usage
+
+1. **Open Healthcare Analytics.pbix** in Power BI Desktop.
+2. **Navigate Through Pages**: Explore each page to view insights into patient demographics, LOS, financial data, and compliance metrics.
+3. **Use Slicers and Filters** to customize views and drill down into specific metrics.
+4. **Export Data**: Power BI allows exporting data from visuals for deeper analysis.
+
