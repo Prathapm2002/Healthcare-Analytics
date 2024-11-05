@@ -26,19 +26,20 @@ This page provides insights into the demographic distribution of patients, inclu
 ### 2. Length of Stay Analysis
 This section allows users to analyze the average **Length of Stay (LOS)** for patients, helping identify trends and compare hospital LOS to state averages. Key metrics include:
 
-- **Var Average Cost per Discharge  and % Var Average LOS Days**
-- calculated with a DAX formula:
-  ```DAX
- % Var Average Cost per Discharge = 
+- **Var Average Cost per Discharge  and % Var Average LOS Days**calculated with a DAX formula:
+  DAX
+ ``` % Var Average Cost per Discharge = 
 DIVIDE(
     ([Average Cost per Discharge]-[Average Cost per Discharge ALL]),
     [Average Cost per Discharge ALL]
 )
-  ```% Var Average LOS Days = 
+ % Var Average LOS Days = 
 DIVIDE(
     ([Average LOS Days]-[Average LOS Days ALL]),
     [Average LOS Days ALL]
 )
+```
+
 - **Patient LOS Distribution**: Histogram of patient stay lengths.
 - **Trend Analysis**: Line graph displaying LOS trends over time by admission type.
 
